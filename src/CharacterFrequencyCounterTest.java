@@ -13,4 +13,12 @@ public class CharacterFrequencyCounterTest {
         //Assert
         assertEquals(2, actual);
     }
+    @Test testGetRelativeFrequencyReturns0ForMissingCharacter() {
+        //Arrange
+        CharacterFrequencyCounter counter = new CharacterFrequencyCounter("hello");
+        //Act
+        double actual = counter.getRelativePercentage('x');
+        //Assert
+        assertEquals(0.0, actual, 0.0001);
+    }
 }
