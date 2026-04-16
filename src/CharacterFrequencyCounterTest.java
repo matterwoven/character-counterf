@@ -13,7 +13,8 @@ public class CharacterFrequencyCounterTest {
         //Assert
         assertEquals(2, actual);
     }
-    @Test testGetRelativeFrequencyReturns0ForMissingCharacter() {
+    @Test 
+    void testGetRelativeFrequencyReturns0ForMissingCharacter() {
         //Arrange
         CharacterFrequencyCounter counter = new CharacterFrequencyCounter("hello");
         //Act
